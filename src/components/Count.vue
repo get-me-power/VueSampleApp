@@ -1,11 +1,11 @@
 <template>
 <div>
-    <div>{{ count }}回クリック</div>
+    <div class="text-red">{{ count }}回クリック</div>
     <!-- Vueの中でクリックしたらincrementメソッドを呼び出す-->
     <button v-on:click="increment">カウントを増やす</button>
     <button v-on:click="decrement">カウントを減らす</button>
     <div class='counter'>Count</div>
-    <div>{{ ClickCount }}</div>
+    <div class="text-blue">{{ ClickCount }}</div>
 </div>
 </template>
 
@@ -21,6 +21,7 @@ export default {
         };
     },
     methods: {
+        //メソッド名の簡略化
         increment (){
             this.count += 1;
             this.ClickCount += 1
@@ -37,6 +38,12 @@ export default {
 .counter {
     font-size: 26px;
     background-color: #dfd;
+}
+.text-red {
+    color: #f22;
+}
+.text-blue {
+    color: #22f
 }
 </style>
 
