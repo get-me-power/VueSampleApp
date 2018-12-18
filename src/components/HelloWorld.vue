@@ -12,6 +12,7 @@
 
 <script>
 import Count from "./Count";
+// new Vueの代わり
 export default {
   name: 'HelloWorld',
   components: {
