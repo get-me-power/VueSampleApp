@@ -10,7 +10,8 @@ export default {
 
 <style scoped>
 .counter {
-    font-size: 18px;
+    font-size: 26px;
     background-color: #dfd;
+}
 </style>
 
