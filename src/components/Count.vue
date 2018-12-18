@@ -10,6 +10,7 @@
 </template>
 
 <script>
+// new Vueの変わり 
 export default {
     name: "Count",
     data() {
@@ -20,11 +21,11 @@ export default {
         };
     },
     methods: {
-        increment: function() {
+        increment (){
             this.count += 1;
             this.ClickCount += 1
         },
-        decrement: function() {
+        decrement () {
             this.count -= 1;
             this.ClickCount += 1
         }
