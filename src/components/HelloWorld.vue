@@ -1,5 +1,6 @@
 <template>
 <div>
+    <counter></counter>
     <div>Hello{{ user.name }}</div>
     <div>Hello{{ user.age }}</div>
     <!-- 三項演算子を理解しような -->
@@ -10,8 +11,13 @@
 </template>
 
 <script>
+import Count from "./Count";
 export default {
   name: 'HelloWorld',
+  components: {
+    //counterというdom(コンポーネント)を作る
+    counter: Count 
+  },
   data () {
     return {
       user: {
