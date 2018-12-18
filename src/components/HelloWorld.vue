@@ -4,7 +4,7 @@
     <div>Hello{{ user.age }}</div>
     <!-- 三項演算子を理解しような -->
     <div>{{todo.name}}</div>
-    <input type='text' v-bind:value="todo.name">
+    <input type='text' :value="todo.name">
     <div>{{todo.name.length>= 20 ? '文字数を減らしてください': ''}}</div>
 </div>
 </template>
