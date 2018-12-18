@@ -1,6 +1,7 @@
 <template>
 <div>
-    <div class="text-red">{{ count }}回クリック</div>
+    <!-- :classはv-bindしているよ -->
+    <div :class="[isRed ? 'text-red': 'text-blue']">{{ count }}回クリック</div>
     <!-- Vueの中でクリックしたらincrementメソッドを呼び出す-->
     <button v-on:click="increment">カウントを増やす</button>
     <button v-on:click="decrement">カウントを減らす</button>
