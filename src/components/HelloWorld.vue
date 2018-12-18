@@ -1,7 +1,7 @@
 <template>
 <div>
-    <div>{{ message }}</div>
-    <div>{{ testData }}</div>
+    <div>Hello{{ user.name }}</div>
+    <div>Hello{{ user.age }}</div>
 </div>
 </template>
 
@@ -10,8 +10,11 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      message: 'Vueはクソ',
-      testData: 'data'
+      user: {
+        name: 'Kouzi Tadokoro',
+        age: 24
+
+      }
     }
   }
 }
