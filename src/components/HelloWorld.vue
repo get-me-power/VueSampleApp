@@ -2,6 +2,9 @@
 <div>
     <div>Hello{{ user.name }}</div>
     <div>Hello{{ user.age }}</div>
+    <!-- 三項演算子を理解しような -->
+    <div>{{todo.name}}</div>
+    <div>{{todo.name.length>= 20 ? '文字数を減らしてください': ''}}</div>
 </div>
 </template>
 
@@ -13,7 +16,9 @@ export default {
       user: {
         name: 'Kouzi Tadokoro',
         age: 24
-
+      },
+      todo: {
+        name: "無駄無駄無駄無駄無駄無駄無駄無駄無駄無駄無駄無駄無駄無駄"
       }
     }
   }
